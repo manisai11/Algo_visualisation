@@ -1,0 +1,149 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoviz - Data Structure Visualizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body style="background-color :whitesmoke; ">
+    <nav class="navbar navbar-expand-md fixed-top" >
+      <div class="container">
+        <a class="navbar-brand" href="#">ALGOVIZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#visualizer">Visualizer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ftr">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="userguied.html">User Guide</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div id="home" class="jumbotron">
+      <div class="container">
+        <h1>Algorithm Visualizer</h1>
+        <p>Explore interactive visualizations of various Algorithms.</p>
+        <a class="btn btn-get-started" href="#visualizer" role="button">Get Started</a>
+      </div>
+    </div>
+  
+    <div id="visualizer" class="container">
+      <div class="section-heading">
+        <h2>Featured Algorithms</h2>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card" id="bubsrt">
+            <img class="card-img-top" src="bubblesort.gif" alt="bubble sort">
+            <div class="card-body">
+              <h5 class="card-title">Bubble Sort</h5>
+              <p class="card-text">Bubble Sort is the simplest sorting algorithm that w
+                orks by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card" id="selsrt">
+            <img class="card-img-top" src="selectionsort.gif" alt="selection sort">
+            <div class="card-body">
+              <h5 class="card-title">Selection sort</h5>
+              <p class="card-text">Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card" id="mersrt">
+            <img class="card-img-top" src="merge-sort.gif" alt="merge sort">
+            <div class="card-body">
+              <h5 class="card-title">Merge Sort</h5>
+              <p class="card-text">Merge sort is defined as a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.Merge sort is one of the most efficient sorting algorithms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex flex-row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card d-flex" id="linsh">
+            <img class="card-img-top" src="linear.gif" alt="Linear seach">
+            <div class="card-body">
+              <h5 class="card-title">Linear Search</h5>
+              <p class="card-text">  Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card" id="binsh">
+            <img class="card-img-top" src="bin.gif" alt="Binary search">
+            <div class="card-body">
+              <h5 class="card-title">Binary search</h5>
+              <p class="card-text"> Binary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations to just one.</p>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+  </div>
+      <div id="About">
+        <div class="delivery-payment-bg-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-5 order-1 order-md-2 order-lg-2">
+                  <img src="about2.jpg" class="delivery-payment-image">
+                </div>
+              <div class="col-12 col-md-6 col-lg-7 order-2 order-md-1 order-lg-1 d-flex flex-column justify-content-center">
+                <h1 class="helathy-food-section-heading">About Us</h1>
+                <p class="helathy-food-section-paragraph">
+                  We are a passionate team of innovators dedicated to transforming education through 
+                  the power of visualization. Our mission is to make complex concepts simple, accessible, 
+                  and engaging. With expertise in both technology and pedagogy, we've crafted the AlgoViz Web 
+                  Application to help learners of all levels master the art of sort and search algorithms. 
+                  Join us on this exciting journey of discovery and learning
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <footer id="ftr" class="footer">
+      <div class="container">
+        <p>VGNT , DEESHMUKHI</p>
+        <p>teamkanyarashi@gmail.com</p>
+      </div>
+  </footer>
+  
+  <script>
+          document.getElementById("bubsrt").addEventListener("click", function() {
+              window.location.href = "index2.html";
+          });
+          document.getElementById("selsrt").addEventListener("click", function() {
+              window.location.href = "index2.html";
+          });
+          document.getElementById("mersrt").addEventListener("click", function() {
+              window.location.href = "index2.html";
+          });
+          document.getElementById("linsh").addEventListener("click", function() {
+              window.location.href = "index1.html";
+          });
+          document.getElementById("binsh").addEventListener("click", function() {
+              window.location.href = "index1.html";
+          });
+  </script>
+  </body></html>
